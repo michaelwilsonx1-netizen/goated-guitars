@@ -1,0 +1,3 @@
+Issues that need resolved. Goal is to make work on all diveces, PC, Tablet, Laptop, and Phone.
+1. Missing side panels on PC, tablet, and laptop. This needs to be corrected so they are not hidden. They should only be hidden on Phone devices. 
+2. When website is open on phone the centre video should fill the phone screen with "GOATED GUITARS" "1051 SE OCEAN BLVD, UNIT1, STUART, FL 34996" "STUART, FLORIDA EST 2024" and " BUILT FOR TONE. FORGED FOR LEGENDS" overlayed on the video. 

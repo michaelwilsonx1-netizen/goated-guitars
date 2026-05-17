@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* Custom scroll-behavior for smooth internal navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+
+.guitar-glow {
+  text-shadow: 0 0 40px rgb(234 179 8 / 0.7);
+}

@@ -1,0 +1,3 @@
+cd C:\Users\BOT\goated-guitars
+rd /s /q .next
+npm run dev
