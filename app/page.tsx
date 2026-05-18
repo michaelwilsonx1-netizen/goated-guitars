@@ -893,7 +893,7 @@ export default function HomePage() {
                             )}
 
                             {/* Title typographic panel content layer overlay */}
-                            <div className="absolute inset-0 z-30 flex flex-col items-center justify-center text-center px-4 gap-7 pointer-events-none">
+                            <div className="absolute inset-0 z-30 flex flex-col items-center justify-end text-center px-4 gap-7 pointer-events-none">
                                 <motion.div initial={false} animate={{ opacity: 1, y: 0 }} className="flex flex-col items-center gap-5" >
                                     <span className="flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.5em] text-amber-400" style={TA}>
                                         <span aria-hidden="true" className="w-8 h-px bg-amber-500/60 rounded-full" />
@@ -911,11 +911,11 @@ export default function HomePage() {
 
                                     <div className="pointer-events-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mt-5 w-full">
                                         <button onClick={() => smoothScrollTo("vault")}
-                                            className="w-full sm:w-auto flex items-center justify-center gap-2 px-10 py-5 rounded-full bg-amber-600 hover:bg-amber-500 text-black font-black text-sm uppercase tracking-[0.3em] transition-all duration-200 hover:scale-105 hover:shadow-[0_0_28px_rgba(217,119,6,0.55)] focus-visible:outline-2 focus-visible:outline-amber-400">
+                                            className="w-full sm:w-auto flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-amber-600 hover:bg-amber-500 text-black font-black text-xs uppercase tracking-[0.3em] transition-all duration-200 hover:scale-105 hover:shadow-[0_0_28px_rgba(217,119,6,0.55)] focus-visible:outline-2 focus-visible:outline-amber-400">
                                             Enter Vault <ChevronDown size={16} aria-hidden="true" />
                                         </button>
                                         <button onClick={() => setShowBooking(true)}
-                                            className="w-full sm:w-auto flex items-center justify-center gap-2 px-10 py-5 rounded-full bg-white hover:bg-zinc-200 text-black font-black text-sm uppercase tracking-[0.3em] transition-all duration-200 hover:scale-105 hover:shadow-[0_0_28px_rgba(255,255,255,0.2)] focus-visible:outline-2 focus-visible:outline-amber-400">
+                                            className="w-full sm:w-auto flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-white hover:bg-zinc-200 text-black font-black text-xs uppercase tracking-[0.3em] transition-all duration-200 hover:scale-105 hover:shadow-[0_0_28px_rgba(255,255,255,0.2)] focus-visible:outline-2 focus-visible:outline-amber-400">
                                             Book Session
                                         </button>
                                     </div>
