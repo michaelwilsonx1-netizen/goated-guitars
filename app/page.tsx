@@ -46,8 +46,8 @@ const LAYOUT_CONTROLS = {
     mobileCenterVideoScale: "scaleX(0.95) scaleY(1.25)",
     mobileCenterVideoWidth: "106vw",
     homeSidePanelWidth: "clamp(170px, 22vw, 330px)",
-    homeCenterVideoMaxWidth: "clamp(495px, 57vw, 930px)",
-    homeCenterVideoMaxHeight: "min(78vh, 880px)",
+    homeCenterVideoMaxWidth: "clamp(950px, 125vw, 1800px)",
+    homeCenterVideoMaxHeight: "min(185vh, 1800px)",
     vaultSidePanelWidth: "clamp(150px, 18vw, 280px)",
     vaultContentMaxWidth: "960px",
     stickyNavOffset: "73px",
@@ -58,40 +58,40 @@ const LAYOUT_CONTROLS = {
 const SIDE_VIDEO_MEDIA = {
     homeLeft: { src: "/guitar-side-1.mp4", poster: "/Gt1.jpg", objectPosition: "center" },
     homeRight: { src: "/guitar-side-2.mp4", poster: "/gt4.jpg", objectPosition: "center" },
-    vaultLeft: { src: "/ACO GT1.mp4", poster: "/Gt1.jpg", objectPosition: "center" },
-    vaultRight: { src: "/ACO GT1.mp4", poster: "/gt4.jpg", objectPosition: "center" },
+    vaultLeft: { src: "/guitar-side-.mp4", poster: "/Gt1.jpg", objectPosition: "center" },
+    vaultRight: { src: "/guitar-side-.mp4", poster: "/gt4.jpg", objectPosition: "center" },
 } as const;
 
 const VAULT_ITEMS: VaultItem[] = [
     {
-        id: "g1", name: "The GT1 Heritage", category: "Electric",
-        price: "$4,200", image: "/Gt1.jpg",
-        description: "Immaculate red semi-hollow body with classic dual humbuckers.",
-        specs: "Mahogany body · Rosewood fretboard · Dual humbuckers",
+        id: "g1", name: "Eastman T59/V-RD", category: "Electric",
+        price: "$1499", image: "/Gt1.jpg",
+        description: "Eastman T59/V-RD (Antique Red) Thinline, Semi-Hollow, Maple, Seymour Duncan Pickups.",
+        specs: "Maple Neck · Ebony fretboard · Tuners: Gotoh Relic Series SD90 · Finish: Antique Varnish · Seymour Duncan Pickups",
     },
     {
-        id: "g2", name: "Coastal Dreadnought", category: "Acoustic",
-        price: "$3,150", image: "/gt4.jpg",
-        description: "Vintage acoustic resonance, protected in its original hardshell case.",
-        specs: "Sitka spruce top · Mahogany back & sides · Bone nut & saddle",
+        id: "g2", name: "1967 HARPTONE E-6N Standel Guitar", category: "Acoustic",
+        price: "$799", image: "/gt4.jpg",
+        description: "Vintage 1967 E-6N · D-18-style dreadnaught featuring a Spruce top, Mahogany sides, an arched Mahogany back and the signature Harptone headstock., protected in its original hardshell case.",
+        specs: "Sitka spruce top · Mahogany sides · Bone nut & saddle Players · Players include George Harrison and David Bowie to name a few",
     },
     {
-        id: "g3", name: "Custom Jet Phaser", category: "Boutique Effects",
-        price: "$850", image: "/Gt pedal.jpg",
-        description: "The ultimate tone-shaping tool for Treasure Coast legends.",
+        id: "g3", name: "Warm Audio Jet Phaser", category: "Boutique Effects",
+        price: "$89", image: "/Gt pedal.jpg",
+        description: "The ultimate tone-shaping tool for Treasure Coast legends · 6-Mode Phaser Guitar Pedal with Built-in Jet Fuzz Circuit",
         specs: "Hand-wired · True bypass · Limited production run",
     },
     {
-        id: "g4", name: "Sunrise Cutaway", category: "Acoustic-Electric",
-        price: "$2,900", image: "/gt2.jpg",
-        description: "Warm cedar top with a crystal-clear Fishman pickup system.",
-        specs: "Western red cedar top · Fishman Presys+ · Venetian cutaway",
+        id: "g4", name: "2019 Fender American Elite Stratocaster HSS Shawbucker", category: "Acoustic-Electric",
+        price: "$1299", image: "/gt2.jpg",
+        description: "Mixing modern sound and a plethora of innovative features with traditional visual style, the American Elite Stratocaster HSS Shawbucker doesn't just push the envelope - it completely annihilates it. ",
+        specs: "Body: Alder · Maple neck · Pickups: 4th Generation Noiseless · Bridge pickup: Shawbucker",
     },
     {
-        id: "g5", name: "Obsidian Classic", category: "Electric",
-        price: "$3,800", image: "/gt3.jpg",
-        description: "Sleek black limba body with coil-tapped humbuckers.",
-        specs: "Black limba body · Maple neck · Coil-tap switching",
+        id: "g5", name: "Eastman Guitars T59/TV Thinline Semi-hollowbody Electric Guitar - Truetone Vintage Classic", category: "Electric",
+        price: "$1699", image: "/gt3.jpg",
+        description: "SB Antique Varnish, Vintage Elegance, Modern Performance.",
+        specs: "Body: Alder · Maple neck · Ebony Fingerboard · Semi-hollowbody · Seymour Duncan Antiquity humbuckers ",
     },
 ];
 
@@ -99,24 +99,24 @@ const TESTIMONIALS: Testimonial[] = [
     {
         id: "t1", name: "Marcus D.", location: "Stuart, FL",
         text: "Walked in not knowing what I wanted. Walked out with a GT1 Heritage that completely changed my playing. These guys actually listen.",
-        instrument: "GT1 Heritage",
+        instrument: "Fender Srtart",
     },
     {
         id: "t2", name: "Elena R.", location: "Palm Beach, FL",
         text: "The private session experience is unlike any guitar shop I've visited. No pressure, just passion. My Coastal Dreadnought sings.",
-        instrument: "Coastal Dreadnought",
+        instrument: "Gibson",
     },
     {
         id: "t3", name: "Jason W.", location: "Fort Pierce, FL",
         text: "The Custom Jet Phaser is everything the description promised and then some. Worth every penny. I'll be back for the Obsidian.",
-        instrument: "Custom Jet Phaser",
+        instrument: "Custom Foot pedal - Jet Phaser",
     },
 ];
 
 const TICKER_ITEMS = [
     "Hand-Selected Instruments", "Private Showroom", "Stuart · Florida",
     "Expert Consultation", "Built for Tone", "Forged for Legends",
-    "Treasure Coast's Finest", "Every Guitar Inspected",
+    "Treasure Coast's Finest", "Every Guitar Inspected, Guitar Repair and Setup",
 ];
 
 const SHOP_FEATURES = [
@@ -641,7 +641,7 @@ function VaultCard({ item, idx, onView, onBook }: VaultCardProps) {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                     style={{ pointerEvents: "none" }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent pointer-events-none" />
+                
                 <div aria-hidden="true"
                     className="absolute bottom-4 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
                     <span className="text-[9px] font-black uppercase tracking-[0.4em] text-white/80 bg-black/55 px-3 py-1.5 rounded-full">
@@ -825,7 +825,8 @@ export default function HomePage() {
 
                 {/* Hidden active buffering source element */}
                 <video ref={videoRef} src="/Background-video3.mp4" muted autoPlay playsInline preload="auto"
-                    aria-hidden="true" className="hidden" />
+                    aria-hidden="true" className="hidden"
+                    onCanPlay={e => { (e.target as HTMLVideoElement).playbackRate = 1.5; }} />
 
                 {/* ═══════════════════════════════════════
                     HERO SEGMENT
@@ -1040,6 +1041,17 @@ export default function HomePage() {
             THE CURATED VAULT LIST SECTION
         ═══════════════════════════════════════ */}
                 <section id="vault" aria-labelledby="vault-heading" className="vault-layout relative flex flex-row items-stretch bg-transparent w-full">
+
+                    {/* Logo watermark background */}
+                    <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0"
+                        style={{
+                            backgroundImage: "url('/logo.jpg')",
+                            backgroundRepeat: "repeat",
+                            backgroundSize: "200px",
+                            opacity: 0.04,
+                            filter: "grayscale(100%)",
+                        }}
+                    />
 
                     {/* Left Panel Vault - Desktop Only */}
                     <SideVideoPanel media={SIDE_VIDEO_MEDIA.vaultLeft} fade="right" mode="vault" />
